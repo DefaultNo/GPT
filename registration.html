@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230502151210">
+	<link rel="shortcut icon" type="image/png" href="img/favicon-blue.svg">
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<main class="main">
+			<div class="registration">
+				<canvas class="registration__canvas" id="c"></canvas>
+				<div class="registration__container _container">
+					<div class="registration__body">
+						<form action="#" class="registration__fields fields-form">
+							<div class="fields-form__items">
+								<div class="fields-form__item">
+									<label for="username" class="fields-form__label">Username*</label>
+									<div class="fields-form__field">
+										<input autocomplete="off" id="username" type="text" placeholder="Enter Username" class="fields-form__input">
+									</div>
+								</div>
+								<div class="fields-form__item">
+									<label for="password" class="fields-form__label">Enter Password*</label>
+									<div class="fields-form__field">
+										<input autocomplete="off" id="password" type="password" placeholder="Enter Password" class="fields-form__input">
+										<button type="button" class="fields-form__view-pass __viewpass">
+											<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.544 7.045C20.848 7.4713 21 7.6845 21 8C21 8.3155 20.848 8.5287 20.544 8.955C19.1779 10.8706 15.6892 15 11 15C6.31078 15 2.8221 10.8706 1.45604 8.955C1.15201 8.5287 1 8.3155 1 8C1 7.6845 1.15201 7.4713 1.45604 7.045C2.8221 5.1294 6.31078 1 11 1C15.6892 1 19.1779 5.1294 20.544 7.045Z" stroke="#606D84" stroke-width="1.5" />
+												<path d="M14 8C14 6.3431 12.6569 5 11 5C9.3431 5 8 6.3431 8 8C8 9.6569 9.3431 11 11 11C12.6569 11 14 9.6569 14 8Z" stroke="#606D84" stroke-width="1.5" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="fields-form__item">
+									<label for="email" class="fields-form__label">Email*</label>
+									<div class="fields-form__field">
+										<input novali autocomplete="off" id="email" type="email" placeholder="Enter Email" class="fields-form__input">
+									</div>
+								</div>
+								<div class="fields-form__item">
+									<label for="first-name" class="fields-form__label">First Name</label>
+									<div class="fields-form__field">
+										<input autocomplete="off" id="first-name" type="text" placeholder="Enter First Name" class="fields-form__input">
+									</div>
+								</div>
+								<div class="fields-form__item">
+									<label for="last-name" class="fields-form__label">Last Name</label>
+									<div class="fields-form__field">
+										<input autocomplete="off" id="last-name" type="text" placeholder="Enter Last Name" class="fields-form__input">
+									</div>
+								</div>
+								<div class="fields-form__item">
+									<label for="country" class="fields-form__label">Country*</label>
+									<div class="fields-form__field">
+										<input autocomplete="off" id="country" type="text" placeholder="Enter Country" class="fields-form__input">
+									</div>
+								</div>
+							</div>
+							<div class="fields-form__footer">
+								<button type="send" class="fields-form__send button-fill">
+									<span class="button-fill__link">Register</span>
+								</button>
+								<div class="fields-form__info">I confirm my SPONSOR</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<h2 class="popup__title title">Rank</h2>
+				<div class="popup__body">
+					<div class="popup__header">
+						<div class="popup__name">Next Rank</div>
+						<button type="button" data-close class="popup__close">
+							<span>
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.84556 4.33773L2.828 0.320245C2.40056 -0.106747 1.70844 -0.106747 1.281 0.320245L0.320249 1.28141C-0.106751 1.70841 -0.106751 2.40052 0.32025 2.82795L4.33781 6.84499C4.42313 6.93074 4.42356 7.06899 4.33781 7.1543L0.32025 11.1718C-0.10675 11.5992 -0.10675 12.2918 0.32025 12.7192L1.28056 13.6795C1.70844 14.1069 2.401 14.1069 2.828 13.679C2.828 13.6795 6.84513 9.662 6.84513 9.662C6.93088 9.57669 7.06913 9.57669 7.15488 9.662L11.172 13.6795C11.5994 14.1069 12.292 14.1069 12.7194 13.679C12.7194 13.6795 13.6798 12.7192 13.6798 12.7192C14.1068 12.2918 14.1068 11.5992 13.6798 11.1718L9.66219 7.1543C9.57644 7.06899 9.57688 6.93074 9.66219 6.84499L13.6797 2.82795C14.1067 2.40052 14.1067 1.7084 13.6797 1.28098L12.7194 0.320244C12.292 -0.106747 11.5994 -0.106747 11.172 0.320244L7.15444 4.33773C7.06913 4.42348 6.93088 4.42348 6.84556 4.33773ZM6.53581 4.64747C6.79263 4.90384 7.20738 4.90384 7.46419 4.64747L11.4817 0.629988C11.7377 0.373619 12.1537 0.373619 12.4097 0.629988L13.37 1.59072C13.6264 1.84665 13.6264 2.26227 13.37 2.5182L9.35244 6.53612C9.0965 6.79249 9.09694 7.20811 9.35244 7.46404L13.37 11.4815C13.6264 11.7375 13.6264 12.1535 13.37 12.4094L12.4097 13.3702C12.1538 13.6265 11.7377 13.6265 11.4818 13.3702L7.46375 9.35226C7.20737 9.09632 6.79263 9.09632 6.53625 9.35226L2.51825 13.3702C2.26188 13.6265 1.84669 13.6265 1.59031 13.3697L0.63 12.4094C0.373625 12.1535 0.373625 11.7375 0.63 11.4815L4.64756 7.46404C4.90306 7.20811 4.9035 6.79249 4.64756 6.53612L0.63 2.5182C0.373625 2.26227 0.373625 1.84665 0.63 1.59072L1.58987 0.629989C1.84669 0.373619 2.26231 0.373619 2.51825 0.629989L6.53581 4.64747Z" fill="#727D8F" />
+								</svg>
+							</span>
+						</button>
+					</div>
+					<div class="popup__columns">
+						<div class="popup__column">
+							<div class="popup__icon"><img src="img/account/user.png" alt="Icon"></div>
+							<div class="popup__info">
+								<div class="popup__info-title">Personal Deposit Required</div>
+								<div class="popup__info-value">100 USD</div>
+							</div>
+						</div>
+						<div class="popup__column">
+							<div class="popup__icon"><img src="img/account/user-s.png" alt="Icon"></div>
+							<div class="popup__info">
+								<div class="popup__info-title">Team Deposit Required</div>
+								<div class="popup__info-value">0 USD</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20230502151210"></script>
+</body>
+
+</html>

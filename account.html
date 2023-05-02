@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230502151210">
+	<link rel="shortcut icon" type="image/png" href="img/favicon-blue.svg">
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header header-account">
+			<div class="header__container _container">
+				<div class="header__logos">
+					<a href="#" class="header__logo header__logo_blue">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<a href="#" class="header__logo header__logo_red">
+						<img src="img/logo-red.svg" alt="logo">
+					</a>
+					<a href="#" class="header__logo header__logo_green">
+						<img src="img/logo-green.svg" alt="logo">
+					</a>
+				</div>
+
+				<nav class="header__nav">
+					<div class="header__account account-header">
+						<ul class="account-header__list">
+							<li class="account-header__item">
+								<a href="#" class="account-header__link">
+									<span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8 5C9.6555 5 11 6.3445 11 8C11 9.6555 9.6555 11 8 11C6.3445 11 5 9.6555 5 8C5 6.3445 6.3445 5 8 5ZM8 10.5C9.38 10.5 10.5 9.38 10.5 8C10.5 6.62 9.38 5.5 8 5.5C6.62 5.5 5.5 6.62 5.5 8C5.5 9.38 6.62 10.5 8 10.5Z" fill="#606D84" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.547 5.70246C13.7735 6.24895 14.2635 6.58545 14.8315 6.61345C15.4855 6.64595 16 7.18894 16 7.84344V8.16243C16 8.81443 15.4835 9.35492 14.8325 9.38692C14.264 9.41492 13.774 9.75042 13.547 10.2979C13.321 10.8439 13.429 11.4259 13.8095 11.8479C14.239 12.3239 14.2345 13.0534 13.7925 13.5179C13.704 13.6109 13.614 13.7014 13.5205 13.7899C13.058 14.2314 12.326 14.2449 11.853 13.8139C11.431 13.4299 10.8455 13.3204 10.2975 13.5469C9.752 13.7734 9.416 14.2614 9.387 14.8289C9.35423 15.4669 8.81374 15.987 8.1785 15.9986C8.05771 16.0008 7.93735 16.0003 7.817 15.9981C7.17473 15.9861 6.64319 15.4765 6.6135 14.8359C6.5865 14.2654 6.2505 13.7744 5.7025 13.5469C5.155 13.3204 4.57 13.4299 4.148 13.8134C3.6755 14.2429 2.946 14.2329 2.484 13.7934C2.39289 13.7081 2.30459 13.62 2.21866 13.5295C1.77864 13.0662 1.75671 12.3274 2.1895 11.8494C2.5705 11.4269 2.679 10.8439 2.4525 10.2979C2.226 9.75042 1.736 9.41492 1.168 9.38692C0.514 9.35442 0 8.81143 0 8.15743V7.83844C0 7.18594 0.5155 6.64445 1.167 6.61345C1.7365 6.58595 2.226 6.24945 2.453 5.70246C2.6795 5.15496 2.5705 4.57047 2.1865 4.14797C1.74732 3.66508 1.78092 2.92807 2.23324 2.45595C2.30222 2.38395 2.37365 2.31242 2.44562 2.2425C2.91085 1.79052 3.66184 1.74723 4.1505 2.18949C4.5725 2.57149 5.156 2.67949 5.7025 2.45349C6.248 2.22699 6.584 1.739 6.613 1.1715C6.64597 0.529688 7.18166 0.0156136 7.822 0.00174524C7.94232 -0.000860571 8.06262 -0.000424657 8.1825 0.00223098C8.82441 0.016451 9.3568 0.523687 9.3865 1.1645C9.4135 1.735 9.7495 2.22599 10.2975 2.45349C10.8455 2.67999 11.4305 2.57049 11.8525 2.18649C12.3245 1.7575 13.054 1.7685 13.5165 2.20749C13.6095 2.29549 13.7005 2.38549 13.789 2.47849C14.234 2.94299 14.24 3.67498 13.8095 4.15197C13.429 4.57397 13.321 5.15646 13.547 5.70246ZM15.5 7.84344C15.5 7.45494 15.1945 7.13194 14.8065 7.11244C14.0445 7.07545 13.3885 6.62595 13.085 5.89346C12.782 5.16246 12.928 4.38197 13.4385 3.81698C13.6984 3.52911 13.6828 3.08831 13.4165 2.81203C13.3367 2.72924 13.2555 2.64871 13.1725 2.56999C12.899 2.30999 12.4675 2.30249 12.1885 2.55649C11.6235 3.07049 10.84 3.21898 10.106 2.91549C9.372 2.61099 8.9235 1.9515 8.8875 1.188C8.87 0.812008 8.559 0.512511 8.1825 0.502511C8.0625 0.499511 7.9425 0.49901 7.822 0.50201C7.4405 0.51101 7.132 0.816008 7.112 1.1975C7.073 1.957 6.6245 2.61199 5.8935 2.91549C5.162 3.21848 4.3805 3.07149 3.8155 2.56049C3.52008 2.29364 3.07273 2.33086 2.79429 2.60084C2.72807 2.66505 2.66271 2.73044 2.5993 2.79666C2.3334 3.07432 2.28917 3.5174 2.5565 3.81198C3.0705 4.37747 3.2185 5.16046 2.915 5.89396C2.611 6.62645 1.9535 7.07595 1.191 7.11244C0.8055 7.13144 0.5 7.45194 0.5 7.83844V8.15743C0.5 8.54543 0.805 8.86843 1.1925 8.88793C1.9545 8.92493 2.611 9.37342 2.9145 10.1069C3.21571 10.8329 3.07368 11.6071 2.572 12.1716C2.31807 12.4572 2.30081 12.8924 2.572 13.1759C2.6616 13.2693 2.74636 13.3573 2.84146 13.4434C3.11501 13.691 3.53705 13.6928 3.812 13.4434C4.377 12.9299 5.1605 12.7814 5.894 13.0849C6.628 13.3894 7.0765 14.0489 7.1125 14.8124C7.13 15.1884 7.4405 15.4874 7.817 15.4979C7.937 15.5004 8.058 15.5009 8.1785 15.4984C8.56 15.4894 8.868 15.1844 8.888 14.8029C8.927 14.0434 9.3755 13.3884 10.1065 13.0849C10.8262 12.7873 11.6189 12.9382 12.1972 13.4508C12.4728 13.6951 12.8922 13.6873 13.1637 13.4389C13.256 13.3545 13.3437 13.2633 13.4305 13.1729C13.6925 12.8974 13.693 12.4649 13.4385 12.1829C12.928 11.6179 12.782 10.8379 13.085 10.1069C13.389 9.37342 14.046 8.92493 14.808 8.88793C15.194 8.86893 15.5 8.54843 15.5 8.16243V7.84344Z" fill="#606D84" />
+										</svg>
+
+									</span>
+									Settings
+								</a>
+							</li>
+							<li class="account-header__item">
+								<a href="#" class="account-header__link">
+									<span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.49915 0.750915C8.49915 0.308909 8.87914 -0.0320958 9.31963 0.00240467C12.8796 0.278908 15.72 3.11995 15.9965 6.67949L15.997 6.67999C16.0305 7.1205 15.69 7.5 15.248 7.5H9.24913C8.83514 7.5 8.49915 7.1645 8.49915 6.74999V0.750915ZM15.498 6.71799C15.2405 3.40395 12.5956 0.757915 9.28063 0.500411C9.13113 0.488911 8.99914 0.600913 8.99914 0.750915V6.74999C8.99914 6.8885 9.11113 7 9.24913 7H15.248C15.398 7 15.5095 6.8675 15.498 6.71799Z" fill="#606D84" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4968 9.80823C13.2063 13.2743 10.3013 15.9968 6.76038 15.9968C3.02694 15.9968 0 12.9698 0 9.23622C0 5.69517 2.72245 2.78963 6.18839 2.49963C6.62938 2.46213 7.01037 2.80563 7.01037 3.24864V8.73621C7.01037 8.87421 7.12237 8.98621 7.26037 8.98621H12.7478C13.1903 8.98621 13.5343 9.36722 13.4968 9.80823ZM0.499991 9.23622C0.499991 12.6938 3.30294 15.4968 6.76038 15.4968C10.0393 15.4968 12.7293 12.9763 12.9988 9.76623C13.0113 9.61722 12.8973 9.48622 12.7478 9.48622H7.26037C6.84637 9.48622 6.51038 9.15022 6.51038 8.73621V3.24864C6.51038 3.09864 6.37938 2.98514 6.23039 2.99764C3.02045 3.26664 0.499991 5.95717 0.499991 9.23622Z" fill="#606D84" />
+										</svg>
+									</span>
+									Statistics
+								</a>
+							</li>
+						</ul>
+						<div class="account-header__controls">
+							<div class="account-header__select color-select">
+								<button class="color-select__title">
+									<span class="color-select__asset">
+										<img src="img/account/blue-icon.svg" alt="blue">
+									</span>
+									<span class="color-select__name">Blue</span>
+								</button>
+								<div class="color-select__options">
+									<button data-color="blue" type="button" class="color-select__option color-select__option_blue">
+										<span class="color-select__option-asset">
+											<img src="img/account/blue-icon.svg" alt="green">
+										</span>
+										<span class="color-select__option-name">Blue</span>
+									</button>
+									<button data-color="green" type="button" class="color-select__option color-select__option_green">
+										<span class="color-select__option-asset">
+											<img src="img/account/green-icon.svg" alt="green">
+										</span>
+										<span class="color-select__option-name">Green</span>
+									</button>
+									<button data-color="red" type="button" class="color-select__option color-select__option_red">
+										<span class="color-select__option-asset">
+											<img src="img/account/red-icon.svg" alt="green">
+										</span>
+										<span class="color-select__option-name">Red</span>
+									</button>
+								</div>
+							</div>
+							<div class="account-header__button button">
+								<a href="#" class="account-header__logout button__link">logout</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<button class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main class="main main-account">
+			<section class="earning">
+				<div class="earning__container _container">
+					<div class="earning__header header-earning">
+						<h1 class="header-earning__title">Welcome, <span>Daniel Johnson</span></h1>
+						<h2 class="header-earning__sub-title">to the <span>&lt;/</span>Beta Version!<span>&gt;</span></h2>
+					</div>
+					<div class="earning__body">
+						<div class="earning__column column-earning">
+							<div class="column-earning__top">
+								<div class="column-earning__header">
+									<div class="column-earning__name">GPT-Deposit</div>
+									<div class="column-earning__sub-name"><span>></span> Balance</div>
+								</div>
+								<div class="column-earning__body">
+									<div class="column-earning__select">
+										<select name="form[]" class="form">
+											<option data-asset="img/account/bitcoin.svg" value="1" selected>Bitcoin<span> / BTC</span></option>
+											<option data-asset="img/account/bitcoin.svg" value="2">Bitcoin<span> / BTC</span></option>
+										</select>
+									</div>
+									<div class="column-earning__balance">
+										<div class="column-earning__balance-numbers">0.00000000</div>
+										<div class="column-earning__banalance-name">BTC</div>
+									</div>
+								</div>
+							</div>
+							<div class="column-earning__button button">
+								<button class="column-earning__make button__link">Make a Deposit</button>
+							</div>
+						</div>
+						<div class="earning__column column-main">
+							<div class="column-main__balance">
+								<div class="column-main__header">
+									<div class="column-main__balance-numbers">
+										<span>9347.37</span>$
+									</div>
+									<div class="column-main__balance-description">Real Time Earning</div>
+									<div class="column-main__time"><img src="img/account/clock.svg" alt="clock"></div>
+								</div>
+								<div class="column-main__body">
+									<div class="column-main__collect button-fill">
+										<button class="column-main__collect-button button-fill__link">
+											<span>
+												<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.2786 19.6494L16.0266 19.6494C16.2046 19.6497 16.3796 19.603 16.5338 19.514C16.688 19.425 16.8159 19.2969 16.9047 19.1426L17.2787 18.4948C17.0765 18.8463 16.785 19.1381 16.4338 19.3409C16.0826 19.5436 15.6841 19.65 15.2786 19.6494Z" fill="#121616" />
+													<path d="M4.76807 18.4948L5.15021 19.1426C5.23848 19.2949 5.36483 19.4218 5.51687 19.5106C5.66891 19.5995 5.84142 19.6473 6.0175 19.6494L6.77638 19.6494C6.36948 19.6514 5.9693 19.5457 5.61654 19.3429C5.26378 19.1401 4.97103 18.8475 4.76807 18.4948Z" fill="#121616" />
+													<path d="M21.8169 9.60932C21.823 9.64832 21.8561 9.67773 21.8956 9.67773C21.9478 9.67773 21.9853 9.62755 21.9656 9.57925C21.949 9.53862 21.9297 9.49908 21.9078 9.46091L19.4062 5.12447L21.5338 8.80774C21.6771 9.05525 21.7731 9.32709 21.8169 9.60932Z" fill="#121616" />
+													<path d="M17.2787 1.44238L16.9047 0.794627C16.8159 0.640306 16.688 0.512168 16.5338 0.423172C16.3796 0.334177 16.2046 0.287479 16.0266 0.287806L15.2786 0.287806C15.6841 0.287185 16.0826 0.393617 16.4338 0.596346C16.785 0.799076 17.0765 1.09092 17.2787 1.44238Z" fill="#121616" />
+													<path d="M0.510241 8.80847L0.781268 8.32875L0.136223 9.46165C0.0469911 9.61565 -8.37542e-08 9.79048 -7.25674e-08 9.96847C-6.13806e-08 10.1465 0.0469911 10.3213 0.136223 10.4753L0.510241 11.123C0.306829 10.7713 0.199727 10.3721 0.199727 9.96576C0.199727 9.55941 0.306829 9.16024 0.510241 8.80847Z" fill="#121616" />
+													<path d="M5.15036 0.794628L4.77905 1.44238C4.98111 1.09132 5.27215 0.79973 5.62284 0.597025C5.97353 0.394319 6.37147 0.287662 6.77652 0.287805L6.01765 0.287806C5.84157 0.289912 5.66905 0.337733 5.51701 0.42658C5.36498 0.515427 5.23863 0.642253 5.15036 0.794628Z" fill="#121616" />
+													<path d="M21.5339 11.123L21.908 10.4753C21.9303 10.4363 21.9499 10.3958 21.9666 10.3542C21.9861 10.3057 21.9483 10.2558 21.8961 10.2558C21.8564 10.2558 21.8231 10.2853 21.8169 10.3246C21.7729 10.6057 21.677 10.8765 21.5339 11.123Z" fill="#121616" />
+													<path d="M0.510253 11.1232L4.76809 18.4951L0.510253 11.1232Z" fill="#121616" />
+													<path d="M4.76801 1.44176L0.786621 8.33398L4.76801 1.44176Z" fill="#121616" />
+													<path d="M10.0721 5.23087C9.86986 5.23087 9.6722 5.29086 9.50412 5.40326C9.33603 5.51565 9.20507 5.67539 9.12781 5.86225C9.05056 6.04912 9.03048 6.2547 9.07013 6.45298C9.10977 6.65126 9.20736 6.83331 9.35052 6.9761C9.49369 7.11889 9.67601 7.21599 9.87439 7.25511C10.0728 7.29423 10.2783 7.27361 10.465 7.19586C10.6516 7.1181 10.811 6.98672 10.923 6.81833C11.0349 6.64995 11.0944 6.45213 11.0938 6.24993C11.0931 5.97941 10.9852 5.72021 10.7936 5.52918C10.6021 5.33814 10.3426 5.23087 10.0721 5.23087Z" fill="#121616" />
+													<path d="M11.0913 13.687C11.0913 13.1242 10.6351 12.6679 10.0723 12.6679C9.50947 12.6679 9.05322 13.1242 9.05322 13.687C9.05322 14.2498 9.50947 14.7061 10.0723 14.7061C10.6351 14.7061 11.0913 14.2498 11.0913 13.687Z" fill="#121616" />
+													<path d="M6.26687 8.94918C6.06531 8.94918 5.86829 9.00895 5.7007 9.12092C5.53312 9.2329 5.40251 9.39205 5.32537 9.57826C5.24824 9.76447 5.22806 9.96937 5.26738 10.167C5.3067 10.3647 5.40376 10.5463 5.54628 10.6888C5.6888 10.8313 5.87038 10.9284 6.06806 10.9677C6.26574 11.007 6.47064 10.9869 6.65684 10.9097C6.84305 10.8326 7.00221 10.702 7.11419 10.5344C7.22616 10.3668 7.28593 10.1698 7.28593 9.96824C7.28593 9.69797 7.17856 9.43877 6.98745 9.24765C6.79634 9.05654 6.53714 8.94918 6.26687 8.94918Z" fill="#121616" />
+													<path d="M17.2786 18.4951L21.5337 11.1232L17.2786 18.4951Z" fill="#121616" />
+													<path d="M4.76796 1.44176L0.786568 8.33399L0.51012 8.80829C0.307715 9.15941 0.201171 9.55758 0.201171 9.96287C0.201171 10.3682 0.307715 10.7663 0.510121 11.1174L4.76796 18.4948C4.97093 18.8475 5.26368 19.1401 5.61644 19.3429C5.9692 19.5457 6.36938 19.6514 6.77627 19.6494L15.2784 19.6494C15.6839 19.65 16.0824 19.5436 16.4336 19.3408C16.7848 19.1381 17.0763 18.8463 17.2786 18.4948L21.5337 11.1229V11.1229C21.7792 10.6998 21.3941 10.2556 20.9049 10.2556L18.2464 10.2556C17.2839 10.2556 16.3739 10.6946 15.7749 11.4481L13.8528 13.8657C13.8257 13.8993 13.7915 13.9266 13.7526 13.9453C13.7137 13.9641 13.671 13.9739 13.6278 13.9741L12.8381 13.9741C12.1526 13.9741 11.5948 14.5447 11.0488 14.9591V14.9591C10.731 15.2004 10.3344 15.3141 9.93705 15.2779C9.53969 15.2417 9.17019 15.0583 8.90114 14.7637C8.63209 14.469 8.48291 14.0844 8.48291 13.6854C8.48291 13.2864 8.63209 12.9018 8.90114 12.6072C9.17019 12.3125 9.53969 12.1291 9.93705 12.0929C10.3344 12.0568 10.731 12.1705 11.0488 12.4117C11.0528 12.4148 11.0568 12.4179 11.0608 12.421C11.5959 12.8352 12.1462 13.3968 12.8229 13.3968V13.3968C13.2509 13.3968 13.6555 13.2012 13.9214 12.8659L13.9721 12.802C14.7883 11.7726 14.0552 10.2556 12.7414 10.2556L9.01718 10.2556C8.33286 10.2556 7.77599 10.8251 7.23082 11.2387V11.2387C6.91351 11.4794 6.51768 11.5928 6.12103 11.5567C5.72438 11.5205 5.35558 11.3374 5.08704 11.0433C4.81849 10.7491 4.6696 10.3652 4.6696 9.96693C4.6696 9.56864 4.81849 9.18474 5.08704 8.8906C5.35558 8.59646 5.72438 8.41333 6.12103 8.37717C6.51768 8.34101 6.91351 8.45444 7.23082 8.69517V8.69517C7.77599 9.10879 8.33286 9.67829 9.01718 9.67829L14.0357 9.67829C15.397 9.67829 16.1558 8.10569 15.3086 7.04015V7.04015C15.0001 6.65209 14.5315 6.42596 14.0357 6.42596L12.8421 6.42596C12.1669 6.42596 11.6283 7.00977 11.1225 7.4572V7.4572C10.8227 7.7225 10.4345 7.86611 10.0341 7.85981C9.63381 7.85352 9.2503 7.69778 8.95893 7.42318C8.66756 7.14858 8.48938 6.77497 8.45939 6.37571C8.4294 5.97646 8.54976 5.58042 8.79684 5.26538C9.04392 4.95033 9.39986 4.73905 9.79475 4.67302C10.1896 4.60699 10.595 4.69098 10.9311 4.90851V4.90851C11.5184 5.28858 12.0992 5.84867 12.7988 5.84867L14.9586 5.84867C15.0022 5.84882 15.0452 5.85862 15.0846 5.87736C15.1239 5.89611 15.1587 5.92333 15.1863 5.95708L17.4585 8.81662C17.8911 9.36102 18.5484 9.67829 19.2437 9.67829L20.9023 9.67829C21.393 9.67829 21.7796 9.23293 21.5337 8.80829V8.80829L19.4061 5.12232L17.2786 1.43634C17.0763 1.08488 16.7848 0.793035 16.4336 0.590306C16.0824 0.387577 15.6839 0.281147 15.2784 0.281768L6.77627 0.281768C6.36884 0.280258 5.9683 0.386825 5.61549 0.590606C5.26269 0.794387 4.97023 1.08809 4.76796 1.44176Z" fill="#121616" />
+													<path d="M17.2786 1.44196L19.4061 5.12793L17.2786 1.44196Z" fill="#121616" />
+												</svg>
+											</span>
+											Collect
+										</button>
+									</div>
+									<div class="column-main__gpt-licence">Auto GPT-Licences Returns Today</div>
+								</div>
+								<div class="column-main__footer">
+									<div class="column-main__licence-wrapper">
+										<div class="column-main__licence">buy licence</div>
+									</div>
+									<ul class="column-main__list">
+										<li class="column-main__item">
+											<div class="column-main__item-name">Safe AI</div>
+											<div class="column-main__item-number">0.23%</div>
+										</li>
+										<li class="column-main__item">
+											<div class="column-main__item-name">Moderate AI</div>
+											<div class="column-main__item-number">0.36%</div>
+										</li>
+										<li class="column-main__item">
+											<div class="column-main__item-name">Strong AI</div>
+											<div class="column-main__item-number">1.23%</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="earning__column column-earning">
+							<div class="column-earning__top">
+								<div class="column-earning__header">
+									<div class="column-earning__name">GPT-Deposit</div>
+									<div class="column-earning__sub-name"><span>></span> Balance</div>
+								</div>
+								<div class="column-earning__body">
+									<div class="column-earning__select">
+										<select name="form[]" class="form">
+											<option data-asset="img/account/bitcoin.svg" value="1" selected>Bitcoin<span> / BTC</span></option>
+											<option data-asset="img/account/bitcoin.svg" value="2">Bitcoin<span> / BTC</span></option>
+										</select>
+									</div>
+									<div class="column-earning__balance">
+										<div class="column-earning__balance-numbers">0.00000000</div>
+										<div class="column-earning__banalance-name">BTC</div>
+									</div>
+								</div>
+							</div>
+							<div class="column-earning__button button">
+								<button class="column-earning__make button__link">Make a withdrawal</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="rank">
+				<div class="rank__container _container">
+					<h2 class="rank__title title">Rank</h2>
+					<div class="rank__items">
+						<div data-popup="#popup" class="rank__item item-rank item-rank__active">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-1.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 1</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Apprentice</div>
+									<div class="item-rank__percent">5%</div>
+								</div>
+							</div>
+							<div class="item-rank__current">Active</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-2.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 2</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Associate</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-3.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 3</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Specialist</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-4.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 4</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Prodigy</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-5.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 5</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Genius</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-6.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 6</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Savant</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-7.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 7</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Visionary</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-8.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 8</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Mastermind</div>
+								</div>
+							</div>
+						</div>
+						<div class="rank__item item-rank">
+							<div class="item-rank__icons">
+								<img src="img/account/ranks/rank-9.png" alt="rank">
+							</div>
+							<div class="item-rank__content">
+								<div class="item-rank__rank">Rank 9</div>
+								<div class="item-rank__info">
+									<div class="item-rank__name">AI Oracle</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="referral-link">
+				<div class="referral-link__container _container">
+					<div class="referral-link__top top-referral-link">
+						<div class="top-referral-link__info">
+							<div class="top-referral-link__header">
+								<h2 class="top-referral-link__title title">
+									Referral Link
+								</h2>
+								<div class="top-referral-link__sponsor">
+									<div class="top-referral-link__your-sponsor">Your sponsor:</div>
+									<div class="top-referral-link__sponsor-name">
+										<span>
+											<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.99962 3.27207C9.99821 3.24931 9.99174 3.22688 9.98021 3.20676L8.50615 0.549974C8.42334 0.406195 8.2671 0.3125 8.09711 0.3125H1.9028C1.7328 0.3125 1.57657 0.406195 1.49376 0.549974L0.0197007 3.20676C0.00644781 3.22988 -0.000119009 3.25605 1.63227e-06 3.28228C-0.000148336 3.31496 0.0100342 3.34787 0.0313048 3.37606L4.6247 9.50232C4.81188 9.74924 5.18781 9.74924 5.375 9.50232L9.9687 3.37606C9.99218 3.34493 10.0021 3.30805 9.99962 3.27207ZM0.468351 3.43813L4.72999 9.12257L3.23644 3.43813H0.468351ZM3.56027 3.43813L4.99977 8.91685L6.43926 3.43813H3.56027ZM6.37074 3.12556H3.62852L4.99963 0.777267L6.37074 3.12556ZM6.7631 3.43813L5.26947 9.12289L9.53164 3.43813H6.7631ZM6.91294 3.12556L8.2753 0.779536L9.57803 3.12556H6.91294ZM8.00425 0.625063H5.27201L6.64184 2.97117L8.00425 0.625063ZM4.72725 0.625063H1.99678L3.35843 2.96943L4.72725 0.625063ZM1.72516 0.778552L3.08834 3.12556H0.421879L1.72516 0.778552Z" fill="#307FDB" />
+											</svg>
+										</span>
+										Patricia White
+									</div>
+								</div>
+							</div>
+							<div class="top-referral-link__text text">
+								<p><span>>>></span> Make A deposit and buy a Licence to get your Referral Link</p>
+							</div>
+						</div>
+						<div class="top-referral-link__button button-fill">
+							<a href="#" class="top-referral-link__button-link button-fill__link">Make A deposit</a>
+						</div>
+					</div>
+					<div class="referral-link__bottom bottom-referral-link">
+						<div class="bottom-referral-link__columns">
+							<div class="bottom-referral-link__column column-chart">
+								<div class="column-chart__header">
+									<div class="column-chart__name">Total Commissions</div>
+									<div class="column-chart__select">
+										<select name="form[]" class="form">
+											<option value="1" selected>Monthly</option>
+											<option value="2">Weekend</option>
+										</select>
+									</div>
+								</div>
+								<div class="column-chart__balance">$<span>00.00</span></div>
+								<div class="column-chart__chart">
+									<canvas id="total-commissions"></canvas>
+								</div>
+							</div>
+							<div class="bottom-referral-link__column column-chart">
+								<div class="column-chart__header">
+									<div class="column-chart__name">Total Earning</div>
+									<div class="column-chart__select">
+										<select name="form[]" class="form">
+											<option value="1" selected>Monthly</option>
+											<option value="2">Weekend</option>
+										</select>
+									</div>
+								</div>
+								<div class="column-chart__balance">$<span>00.00</span></div>
+								<div class="column-chart__chart">
+									<canvas id="total-earning"></canvas>
+								</div>
+							</div>
+						</div>
+						<div class="bottom-referral-link__info">
+							<div class="bottom-referral-link__logos">
+								<a href="#" class="bottom-referral-link__logo bottom-referral-link__logo_blue">
+									<img src="img/logo.svg" alt="logo">
+								</a>
+								<a href="#" class="bottom-referral-link__logo bottom-referral-link__logo_red">
+									<img src="img/logo-red.svg" alt="logo">
+								</a>
+								<a href="#" class="bottom-referral-link__logo bottom-referral-link__logo_green">
+									<img src="img/logo-green.svg" alt="logo">
+								</a>
+							</div>
+							<div class="bottom-referral-link__title">Tokens</div>
+							<div class="bottom-referral-link__numbers">120 000</div>
+							<div class="bottom-referral-link__value">$value = <span>$1302.54</span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer-account">
+			<div class="footer-account__container _container">
+				<div class="footer-account__buttons">
+					<button type="button" class="footer-account__button">
+						<span>
+							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.88219 7.78254L8.8038 7.70469C8.68182 7.58356 8.68182 7.38694 8.8038 7.26581C8.92577 7.14468 9.12377 7.14468 9.24575 7.26581L9.31803 7.33759C9.67537 7.05837 10.1037 6.88136 10.4618 6.88093C10.6343 6.88093 10.7743 7.01996 10.7743 7.19126C10.7743 7.36257 10.6343 7.5016 10.4618 7.5016C10.2403 7.5016 9.98543 7.60999 9.7603 7.77679L10.8035 8.81277C11.0526 8.69432 11.2995 8.59032 11.5337 8.54556C11.9075 8.47294 12.255 8.53315 12.5563 8.83169C13.1101 9.38229 13.0083 10.0563 12.6033 10.6001L12.693 10.6891C12.8149 10.8102 12.8149 11.0068 12.693 11.128C12.571 11.2491 12.373 11.2491 12.251 11.128L12.1647 11.0423C11.8095 11.3167 11.3864 11.4902 11.0319 11.4906C10.8594 11.4906 10.7193 11.3516 10.7193 11.1803C10.7193 11.009 10.8594 10.87 11.0319 10.87C11.2498 10.87 11.5 10.7651 11.7222 10.6029L10.6769 9.56479C10.4321 9.68075 10.1896 9.782 9.95933 9.826C9.58558 9.89862 9.23807 9.83842 8.93681 9.53987C8.38671 8.99359 8.48348 8.32436 8.88219 7.78254ZM9.33191 8.22914C9.1581 8.50745 9.10765 8.8312 9.37932 9.10044C9.5137 9.23451 9.67245 9.2494 9.83996 9.21713C9.95916 9.19393 10.0819 9.15071 10.2065 9.09768L9.33191 8.22914ZM11.2735 9.27947L12.1541 10.1539C12.334 9.87306 12.3892 9.54408 12.1137 9.27112C11.9794 9.13706 11.8206 9.12216 11.6531 9.15444C11.5298 9.17844 11.4026 9.22389 11.2735 9.27947Z" fill="#606D84" />
+								<path d="M8.03347 16.0376L8.65839 15.417C8.78037 15.2959 8.78037 15.0993 8.65839 14.9781C8.53641 14.857 8.33842 14.857 8.21644 14.9781L7.59152 15.5987C7.46954 15.7198 7.46954 15.9165 7.59152 16.0376C7.7135 16.1587 7.91149 16.1587 8.03347 16.0376Z" fill="#606D84" />
+								<path d="M13.2185 2.5651L13.8434 1.94452C13.9654 1.82339 14.1634 1.82339 14.2853 1.94452C14.4073 2.06565 14.4073 2.26227 14.2853 2.3834L13.6604 3.00398C13.5384 3.12511 13.3404 3.12511 13.2185 3.00398C13.0965 2.88284 13.0965 2.68623 13.2185 2.5651Z" fill="#606D84" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19.6561 7.02429L8.94774 17.6582C8.48461 18.1175 7.72772 18.1144 7.25646 17.6458L2.23074 12.655C1.75948 12.187 1.75635 11.4354 2.21824 10.9761L12.9272 0.341546C13.3897 -0.117129 14.1466 -0.114646 14.6178 0.353959L19.6436 5.34476C20.1154 5.81399 20.1179 6.565 19.6561 7.02429ZM8.50523 17.2188L19.2136 6.58548C19.4342 6.36576 19.4267 6.00764 19.2011 5.7842L14.1753 0.792773C13.9503 0.569332 13.5897 0.561883 13.3684 0.78098L2.66075 11.4143C2.44012 11.634 2.44824 11.9921 2.67325 12.2156L7.69897 17.207C7.92397 17.4304 8.2846 17.4385 8.50523 17.2188Z" fill="#606D84" />
+								<path d="M6.56392 4.3439H1.56382C1.39132 4.3439 1.25132 4.20487 1.25132 4.03356C1.25132 3.86226 1.39132 3.72323 1.56382 3.72323H6.56392C6.73642 3.72323 6.87642 3.86226 6.87642 4.03356C6.87642 4.20487 6.73642 4.3439 6.56392 4.3439Z" fill="#606D84" />
+								<path d="M4.06078 6.20536H0.935723C0.76322 6.20536 0.623217 6.06633 0.623217 5.89503C0.623217 5.72372 0.76322 5.58469 0.935723 5.58469H4.06078C4.23328 5.58469 4.37329 5.72372 4.37329 5.89503C4.37329 6.06633 4.23328 6.20536 4.06078 6.20536Z" fill="#606D84" />
+								<path d="M0.312506 8.06713H2.18754C2.36004 8.06713 2.50005 7.9281 2.50005 7.75679C2.50005 7.58549 2.36004 7.44646 2.18754 7.44646H0.312506C0.140003 7.44646 0 7.58549 0 7.75679C0 7.9281 0.140003 8.06713 0.312506 8.06713Z" fill="#606D84" />
+							</svg>
+
+						</span>
+						Set Up auto-withdrawal
+					</button>
+					<button type="button" class="footer-account__button">
+						<span>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.8423 4.29581C7.92646 2.11894 10.1709 0.625 12.7628 0.625C16.4142 0.625 19.3751 3.58985 19.3751 7.24823C19.3751 9.82914 17.9014 12.0657 15.7499 13.1589C15.5961 13.2371 15.5347 13.4252 15.6129 13.5791C15.6911 13.7329 15.8792 13.7943 16.0331 13.7161C18.3865 12.5203 20.0001 10.0731 20.0001 7.24823C20.0001 3.24561 16.7603 0 12.7628 0C9.92442 0 7.46842 1.63667 6.28284 4.01718C6.2059 4.17167 6.26876 4.35928 6.42325 4.43622C6.57774 4.51316 6.76536 4.4503 6.8423 4.29581Z" fill="#606D84" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.1875 5.625C3.21795 5.625 0 8.84295 0 12.8125C0 16.782 3.21795 20 7.1875 20C11.157 20 14.375 16.782 14.375 12.8125C14.375 8.84295 11.157 5.625 7.1875 5.625ZM0.625 12.8125C0.625 9.18813 3.56313 6.25 7.1875 6.25C10.8119 6.25 13.75 9.18813 13.75 12.8125C13.75 16.4369 10.8119 19.375 7.1875 19.375C3.56313 19.375 0.625 16.4369 0.625 12.8125Z" fill="#606D84" />
+							</svg>
+						</span>
+						Set Up auto-Compound
+					</button>
+					<button type="button" class="footer-account__button">
+						<span>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4.0625 0C1.81884 0 0 1.81884 0 4.0625C0 6.30616 1.81884 8.125 4.0625 8.125C6.30616 8.125 8.125 6.30616 8.125 4.0625C8.125 1.81884 6.30616 0 4.0625 0ZM0.625 4.0625C0.625 2.16402 2.16402 0.625 4.0625 0.625C5.96098 0.625 7.5 2.16402 7.5 4.0625C7.5 5.96098 5.96098 7.5 4.0625 7.5C2.16402 7.5 0.625 5.96098 0.625 4.0625Z" fill="#606D84" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9375 11.875C13.6938 11.875 11.875 13.6938 11.875 15.9375C11.875 18.1812 13.6938 20 15.9375 20C18.1812 20 20 18.1812 20 15.9375C20 13.6938 18.1812 11.875 15.9375 11.875ZM12.5 15.9375C12.5 14.039 14.039 12.5 15.9375 12.5C17.836 12.5 19.375 14.039 19.375 15.9375C19.375 17.836 17.836 19.375 15.9375 19.375C14.039 19.375 12.5 17.836 12.5 15.9375Z" fill="#606D84" />
+								<path d="M2.8125 10.625C2.98509 10.625 3.125 10.7649 3.125 10.9375C3.125 13.5067 3.95733 15.0488 5.14527 15.9165C6.18847 16.6786 7.55328 16.9559 8.99177 16.8942L7.00705 14.8861C6.88573 14.7634 6.88689 14.5655 7.00964 14.4442C7.13239 14.3229 7.33025 14.324 7.45157 14.4468L9.90976 16.934C10.0288 17.0544 10.0302 17.2478 9.91297 17.37L7.48121 19.9039C7.36171 20.0284 7.16389 20.0325 7.03936 19.913C6.91484 19.7935 6.91077 19.5956 7.03028 19.4711L8.89993 17.523C7.40988 17.5686 5.93899 17.2703 4.77661 16.4212C3.38642 15.4057 2.5 13.6491 2.5 10.9375C2.5 10.7649 2.63991 10.625 2.8125 10.625Z" fill="#606D84" />
+								<path d="M11.0082 3.10573C12.4467 3.04408 13.8115 3.32139 14.8548 4.08343C16.0427 4.95118 16.875 6.49328 16.875 9.06247C16.875 9.23505 17.0149 9.37497 17.1875 9.37497C17.3601 9.37497 17.5 9.23505 17.5 9.06247C17.5 6.3509 16.6136 4.59422 15.2234 3.57874C14.061 2.72966 12.5902 2.43141 11.1001 2.47701L12.9697 0.528881C13.0892 0.404359 13.0852 0.206537 12.9606 0.0870329C12.8361 -0.0324709 12.6383 -0.0284026 12.5188 0.0961196L10.087 2.62999C9.96976 2.7522 9.97118 2.94558 10.0902 3.06605L12.5484 5.55323C12.6697 5.67598 12.8676 5.67714 12.9904 5.55582C13.1131 5.4345 13.1143 5.23664 12.993 5.11389L11.0082 3.10573Z" fill="#606D84" />
+							</svg>
+						</span>
+						Set Up auto-Convert
+					</button>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<h2 class="popup__title title">Rank</h2>
+				<div class="popup__body">
+					<div class="popup__header">
+						<div class="popup__name">Next Rank</div>
+						<button type="button" data-close class="popup__close">
+							<span>
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.84556 4.33773L2.828 0.320245C2.40056 -0.106747 1.70844 -0.106747 1.281 0.320245L0.320249 1.28141C-0.106751 1.70841 -0.106751 2.40052 0.32025 2.82795L4.33781 6.84499C4.42313 6.93074 4.42356 7.06899 4.33781 7.1543L0.32025 11.1718C-0.10675 11.5992 -0.10675 12.2918 0.32025 12.7192L1.28056 13.6795C1.70844 14.1069 2.401 14.1069 2.828 13.679C2.828 13.6795 6.84513 9.662 6.84513 9.662C6.93088 9.57669 7.06913 9.57669 7.15488 9.662L11.172 13.6795C11.5994 14.1069 12.292 14.1069 12.7194 13.679C12.7194 13.6795 13.6798 12.7192 13.6798 12.7192C14.1068 12.2918 14.1068 11.5992 13.6798 11.1718L9.66219 7.1543C9.57644 7.06899 9.57688 6.93074 9.66219 6.84499L13.6797 2.82795C14.1067 2.40052 14.1067 1.7084 13.6797 1.28098L12.7194 0.320244C12.292 -0.106747 11.5994 -0.106747 11.172 0.320244L7.15444 4.33773C7.06913 4.42348 6.93088 4.42348 6.84556 4.33773ZM6.53581 4.64747C6.79263 4.90384 7.20738 4.90384 7.46419 4.64747L11.4817 0.629988C11.7377 0.373619 12.1537 0.373619 12.4097 0.629988L13.37 1.59072C13.6264 1.84665 13.6264 2.26227 13.37 2.5182L9.35244 6.53612C9.0965 6.79249 9.09694 7.20811 9.35244 7.46404L13.37 11.4815C13.6264 11.7375 13.6264 12.1535 13.37 12.4094L12.4097 13.3702C12.1538 13.6265 11.7377 13.6265 11.4818 13.3702L7.46375 9.35226C7.20737 9.09632 6.79263 9.09632 6.53625 9.35226L2.51825 13.3702C2.26188 13.6265 1.84669 13.6265 1.59031 13.3697L0.63 12.4094C0.373625 12.1535 0.373625 11.7375 0.63 11.4815L4.64756 7.46404C4.90306 7.20811 4.9035 6.79249 4.64756 6.53612L0.63 2.5182C0.373625 2.26227 0.373625 1.84665 0.63 1.59072L1.58987 0.629989C1.84669 0.373619 2.26231 0.373619 2.51825 0.629989L6.53581 4.64747Z" fill="#727D8F" />
+								</svg>
+							</span>
+						</button>
+					</div>
+					<div class="popup__columns">
+						<div class="popup__column">
+							<div class="popup__icon"><img src="img/account/user.png" alt="Icon"></div>
+							<div class="popup__info">
+								<div class="popup__info-title">Personal Deposit Required</div>
+								<div class="popup__info-value">100 USD</div>
+							</div>
+						</div>
+						<div class="popup__column">
+							<div class="popup__icon"><img src="img/account/user-s.png" alt="Icon"></div>
+							<div class="popup__info">
+								<div class="popup__info-title">Team Deposit Required</div>
+								<div class="popup__info-value">0 USD</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20230502151210"></script>
+</body>
+
+</html>
